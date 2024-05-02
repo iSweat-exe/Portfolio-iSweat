@@ -1,0 +1,342 @@
+:root {
+    /* Shade */
+    --white: #ffffff;
+    --black: #010101;
+
+    /* Color */
+    --green: #00ff41;
+
+    /* Fonts */
+    --primary-font: 'Inter Tight', sans-serif;
+    
+    /* Style Fonts */
+    --opacity-font-1: 0.5;
+    --opacity-font-2: 0.85;
+    --opacity-font-3: 0.9;
+
+    /* Size */
+
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    /* outline: 1px red solid; */
+}
+
+.intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Assurez-vous que la couche intro est au-dessus de tout */
+}
+
+.intro-text {
+    font-size: 48px;
+    color: white;
+}
+
+/* Cover */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(150%);
+}
+
+
+.cover-content {
+    position: relative;
+    top: 50%; /* Centrage vertical */
+    left: 50%; /* Centrage horizontal */
+    transform: translate(-50%, -75%); /* Centrage parfait */
+    z-index: 1;
+    color: white;
+}
+
+.cover-content p {
+    text-align: center;
+    font-size: 96px;
+    letter-spacing: -4%;
+    font-weight: 900;
+    text-shadow: #010101 8px 8px 4px;
+    margin-top: 0; /* Ajout de cette ligne pour supprimer le margin-top */
+}
+
+.cover-content h1 {
+    text-align: center;
+    font-size: 400px;
+    font-weight: 900;
+    letter-spacing: -10px;
+    opacity: var(--opacity-font-2);
+    text-shadow:#010101 20px 20px 10px;
+    margin-bottom: 0; /* Ajout de cette ligne pour supprimer le margin-bottom */
+}
+
+
+span {
+    color: var(--green);
+}
+
+
+
+.cover .navigation {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    color: white;
+}
+
+.cover .navigation p {
+    color: var(--green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: #010101 4px 4px 0px;
+    cursor: pointer;
+}
+
+.cover .navigation h2 {
+    text-shadow: #010101 4px 4px 0px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+    position: absolute;
+    bottom: 0; /* Aligner l'élément .end en bas de la section */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Centrer horizontalement */
+    z-index: 1;
+    color: white;
+}
+
+.end #date-time {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -4%;
+    text-shadow: #010101 8px 8px 0px; /* Ombre textuelle sombre */
+}
+
+
+.end p {
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -3%;
+    opacity: var(--opacity-font-2);
+    text-shadow: #010101 4px 4px 0px;
+}
+
+
+/* Navbar */
+
+.Overlay-Navbar-Open {
+    color: white;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    overflow: hidden;
+    z-index: 9999;
+    transition: top 0.6s ease;
+}
+
+.Overlay-Navbar-Open {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#toggleButtonOff {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: center;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 140px;
+    margin: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: var(--green);
+}
+
+
+
+/* Main */
+
+.main h2 {
+    opacity: 0;
+    margin: 45px 15px 30px 100px;
+    font-size: 96px;
+    font-weight: bold;
+    letter-spacing: -4%;
+}
+
+.main .works {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px 30px 100px;
+    align-items: center;
+    opacity: 0;
+}
+
+.main .work-1 {
+    cursor: pointer;
+    margin-bottom: 25px;
+    width: 500px;
+    height: 700px;
+    background-color: red;
+    filter: grayscale(100%);
+    transition: .3s all;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .work-1 p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main .work-1:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.main .work-1 p {
+    color: var(--green);
+}
+
+.background-work-1,
+.background-work-2,
+.background-work-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.btn-works a {
+    background-color: #010101;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+    transition: .3s ease-out;
+}
+
+.btn-works a:hover {
+    color: var(--green);
+}
+
+/* Services Section */
+
+.services .title-2 {
+    opacity: 0;
+    margin: 45px 15px 30px 100px;
+    font-size: 96px;
+    font-weight: bold;
+    letter-spacing: -4%;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.services-content h2 {
+    margin: 45px 15px 30px 50px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -4%;
+}
+
+.services-content p {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 75%;
+    letter-spacing: -3%;
+    color: #010101ca;
+}
