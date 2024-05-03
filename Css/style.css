@@ -28,6 +28,17 @@
     /* outline: 1px red solid; */
 }
 
+#mobileOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
 .intro-overlay {
     position: fixed;
     top: 0;
@@ -38,7 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Assurez-vous que la couche intro est au-dessus de tout */
+    z-index: 9998;
 }
 
 .intro-text {
