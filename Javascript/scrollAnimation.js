@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { selector: '.works', startY: 300, endY: 0, delay: 0, duration: 1500 },
         { selector: '.title-1', startY: 100, endY: 0, delay: 0, duration: 1500 },
         { selector: '.title-2', startY: 100, endY: 0, delay: 0, duration: 1500 },
-        { selector: '.btn-works', startY: -50, endY: 0, delay: 0.3, duration: 2000 },
+        { selector: '.btn-works', startY: -50, endY: 0, delay: 0.2, duration: 1500 },
 
         { selector: '.service-1', startY: 100, endY: 0, delay: 0.2, duration: 1500 },
         { selector: '.service-2', startY: 100, endY: 0, delay: 0.3, duration: 1500 },

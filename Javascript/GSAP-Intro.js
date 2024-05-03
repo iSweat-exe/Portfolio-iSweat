@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Animation de l'intro avec GSAP
   gsap.to(".intro-overlay", {
     duration: 0.5,
     delay: 2.5,
@@ -7,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power2.inOut",
     onComplete: function () {
       document.querySelector(".intro-overlay").remove();
+      document.body.style.overflow = "auto";
     },
   });
+
+  document.body.style.overflow = "hidden";
 });
