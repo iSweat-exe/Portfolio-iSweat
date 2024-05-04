@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Animation de l'intro avec GSAP
   gsap.to(".intro-overlay", {
     duration: 0.5,
     delay: 2.5,
