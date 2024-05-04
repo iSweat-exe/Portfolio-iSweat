@@ -1,4 +1,4 @@
-console.log("Hello Hero Anim");
+console.log("Hero Animation JS Loaded");
 
 document.addEventListener("DOMContentLoaded", (event) => {
 

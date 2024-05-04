@@ -216,7 +216,7 @@ span {
 .Overlay-Navbar-Open {
     color: white;
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -382,11 +382,7 @@ span {
 
 .footer {
     color: white;
-    background-color: #010101;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: var(--black);
     margin: 0px 0px 30px 0px;
     width: 100%;
     height: 600px;
@@ -395,19 +391,59 @@ span {
 .footer .footer-main h1 {
     font-size: 96px;
     letter-spacing: -4%;
+    text-align: center;
 }
 
 .footer .footer-main p {
+    text-align: center;
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
     letter-spacing: -3%;
     color: white;
+    margin-bottom: 15px;
 }
 
 .line {
     width: 100%;
     height: 1px;
     background-color: white;
+    margin-bottom: 15px;
 }
 
+/* Place at the bottom-left of the page content */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.footer-contact a {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.footer-contact .kanso {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.footer-contact p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-contact .name-developer {
+    margin-bottom: 50px;
+}

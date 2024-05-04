@@ -1,3 +1,5 @@
+console.log("GSAP Intro JS Loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
   gsap.to(".intro-overlay", {
     duration: 0.5,

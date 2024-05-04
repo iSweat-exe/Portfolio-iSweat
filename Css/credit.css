@@ -1,0 +1,37 @@
+:root {
+    /* Shade */
+    --white: #ffffff;
+    --black: #010101;
+
+    /* Color */
+    --green: #00ff41;
+
+    /* Fonts */
+    --primary-font: 'Inter Tight', sans-serif;
+    
+    /* Style Fonts */
+    --opacity-font-1: 0.5;
+    --opacity-font-2: 0.85;
+    --opacity-font-3: 0.9;
+
+    /* Size */
+
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    /* outline: 1px red solid; */
+}
+
+.kanso {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--green);
+}

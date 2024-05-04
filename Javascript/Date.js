@@ -1,3 +1,5 @@
+console.log("Date JS Loaded");
+
 const updateDateTime = () => {
     const now = new Date();
     let hours = now.getHours();

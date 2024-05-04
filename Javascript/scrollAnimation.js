@@ -1,4 +1,4 @@
-console.log("Hello Scroll Animation");
+console.log("Scroll Animation JS Loaded");
 
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { selector: '.title-1', startY: 100, endY: 0, delay: 0, duration: 1500 },
         { selector: '.title-2', startY: 100, endY: 0, delay: 0, duration: 1500 },
         { selector: '.btn-works', startY: -50, endY: 0, delay: 0.2, duration: 1500 },
-
 
         { selector: '.services-content', startY: 150, endY: 0, delay: 0.2, duration: 1500 },
 
